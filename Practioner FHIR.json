@@ -1,0 +1,44 @@
+{
+  "resourceType": "Practitioner",
+"id": "example-123",
+"name": [
+  {
+    "use": "official",
+    "family": "Reed",
+    "given": ["Evelyn"]
+  }
+],
+"telecom": [
+  {
+    "system": "email",
+    "value": "e.reed@clinic.example.com",
+    "use": "work"
+  }
+],
+"gender": "female",
+"qualification": [
+  {
+    "identifier": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.4.642.1.1",
+        "value": "MD12345"
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0360",
+          "code": "MD",
+          "display": "Doctor of Medicine"
+        }
+      ]
+    },
+    "period": {
+      "start": "2025-01-01"
+    },
+    "issuer": {
+      "display": "State Medical Board of Excellence"
+    }
+  }
+]
+}

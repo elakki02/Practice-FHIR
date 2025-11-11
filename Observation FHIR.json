@@ -1,0 +1,43 @@
+{
+  "resourceType": "Observation",
+  "id": "example-123",
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "2345-7",
+        "display": "Glucose [Mass/volume] in Serum or Plasma"
+      }
+    ],
+    "text": "Fasting Blood Glucose"
+  },
+  "subject": {
+    "reference": "Patient/123",
+    "display": "Jane Doe"
+  },
+  "effectiveDateTime": "2024-07-15T08:30:00-05:00",
+  "valueQuantity": {
+    "value": 110,
+    "unit": "mg/dL",
+    "system": "http://unitsofmeasure.org",
+    "code": "mg/dL"
+  },
+  "referenceRange": [
+    {
+      "low": {
+        "value": 70,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      },
+      "high": {
+        "value": 99,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      },
+      "text": "Normal Fasting Glucose"
+    }
+  ]
+}
